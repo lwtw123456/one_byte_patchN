@@ -128,8 +128,6 @@ n'(d) ≡ 0 (mod r)   ⟺   d ≡ −n · 256^(−m) (mod r)
 g++ ... -DBYTE_PATCH_TABLE_AT_COMPILE_TIME=1 ...
 ```
 
-CMake 用 `-DBYTE_PATCH_COMPILE_TIME_TABLE=ON`。
-
 > Clang 用编译期建表要加 `-fconstexpr-steps=100000000`。
 
 ## 目录
@@ -138,7 +136,6 @@ CMake 用 `-DBYTE_PATCH_COMPILE_TIME_TABLE=ON`。
 include/one_byte_patchN.hpp   库本体（单头文件）
 examples/demo.cpp           命令行示例
 tests/data.txt              样例模数（1024 / 2048 / 3072 / 4096 bit）
-CMakeLists.txt              CMake 工程
 ```
 
 ## 开源协议
