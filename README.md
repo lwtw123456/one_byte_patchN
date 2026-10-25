@@ -75,8 +75,7 @@ demo.exe <十六进制模数> 0x10001   :: e = 65537
 | GMP | 6.3.0，静态 `libgmp.a`（fat 构建，按 CPUID 选 `mpn` 变体） |
 | 编译选项 | `-O3 -DNDEBUG -static -s --gc-sections` |
 
-`tests/data.txt` 里每个尺寸一个用例，
-各跑 15 次取中位数（12 线程）：
+`tests/data.txt` 里每个尺寸一个用例，各跑 15 次取中位数：
 
 | 模数 | 耗时 | 改的字节 |
 | --- | --- | --- |
