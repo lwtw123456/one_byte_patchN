@@ -98,7 +98,7 @@ demo.exe <十六进制模数> 0x10001   :: e = 65537
 | 3072 bit | 43.6 ms | 4.85 s |
 | 4096 bit | 84.4 ms | 26.4 s |
 
-至于飘云阁的 RSA 一字节替换工具 v1.3 以及开源实现 RSA-PATCH-TOOLKIT(https://github.com/FTSTT/RSA-PATCH-TOOLKIT) ，速度差距更大，几百倍起步。
+至于飘云阁的 RSA 一字节替换工具 v1.3 以及开源实现 RSA-PATCH-TOOLKIT(https://github.com/FTSTT/RSA-PATCH-TOOLKIT) ，速度差距更大，4096 bit 上千倍起步。
 
 ## 为什么快
 
