@@ -9,7 +9,7 @@ RSA 加密 1 字节 patchN 的 C++ header-only 库。
 | 编译器 | 支持 `__int128` 的 C++20 编译器（GCC / Clang） |
 | 库 | GMP 6.x（含 gmpxx） |
 
-**不要用 MSVC** MSVC 没有 GCC 风格的 `__int128`，GMP 在 x86_64 上拿不到 64×64→128 位的直接中间结果，`mpn` 的乘法和平方会退化成 32 位拼接的 C 代码。
+**不要用 MSVC。** MSVC 没有 GCC 风格的 `__int128`，GMP 在 x86_64 上拿不到 64×64→128 位的直接中间结果，`mpn` 的乘法和平方会退化成 32 位拼接的 C 代码。
 
 GMP 的 x86_64 汇编路径（`libgmp.a` 里 680 条 `mulq`/`mulx`）才是 Miller-Rabin 那 99.9% 耗时的来源。
 
